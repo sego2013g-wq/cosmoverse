@@ -1672,6 +1672,67 @@
       transform: translateY(-3px);
     }
 
+    .contact-us {
+      margin-top: 3rem;
+      padding: 2rem 1.2rem;
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      background: linear-gradient(145deg, rgba(var(--surface-rgb), .7), rgba(var(--surface-rgb), .35));
+      text-align: center;
+    }
+
+    .contact-us h3 {
+      margin: 0 0 1.2rem;
+      font: 800 1.2rem Orbitron, Vazirmatn, sans-serif;
+      letter-spacing: .08em;
+    }
+
+    .contact-items {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: .9rem;
+    }
+
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: .7rem;
+      padding: .8rem 1.3rem;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, .035);
+      color: var(--white);
+      font-weight: 600;
+      text-decoration: none;
+      transition: .25s ease;
+    }
+
+    .contact-item:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      transform: translateY(-3px);
+      box-shadow: 0 0 24px var(--shadow);
+    }
+
+    .contact-item .contact-label {
+      color: var(--muted);
+      font-size: .8rem;
+      font-weight: 500;
+    }
+
+    .contact-item .contact-value {
+      direction: ltr;
+      unicode-bidi: isolate;
+    }
+
+    .contact-item.contact-name:hover {
+      border-color: var(--border);
+      color: var(--white);
+      transform: none;
+      box-shadow: none;
+    }
+
     .footer-bottom {
       display: flex;
       justify-content: space-between;
@@ -2648,6 +2709,24 @@
         </div>
       </div>
 
+      <div class="contact-us" id="contact">
+        <h3 data-i18n="contactUs">Contact Us</h3>
+        <div class="contact-items">
+          <div class="contact-item contact-name">
+            <span class="contact-label" data-i18n="nameLabel">Full name</span>
+            <span class="contact-value-name" data-i18n="ownerName">Sepehr Gomari</span>
+          </div>
+          <a class="contact-item" href="tel:+989963100299">
+            <span class="contact-label" data-i18n="phoneLabel">Phone</span>
+            <span class="contact-value">09963100299</span>
+          </a>
+          <a class="contact-item" href="https://t.me/Sepehr_2013G" target="_blank" rel="noopener noreferrer">
+            <span class="contact-label" data-i18n="telegramLabel">Telegram ID</span>
+            <span class="contact-value">@Sepehr_2013G</span>
+          </a>
+        </div>
+      </div>
+
       <div class="footer-bottom">
         <span>© <span id="currentYear"></span> CosmoVerse. Explore Beyond Infinity.</span>
         <span data-i18n="madeWith">Made with curiosity among the stars.</span>
@@ -2724,7 +2803,7 @@
         sum1: "Single-file cinematic HTML experience.", sum2: "Responsive mobile-first interface.", sum3: "Three.js starfield with Canvas2D fallback.", sum4: "Four persistent visual themes.", sum5: "English, Persian and Arabic support.",
         sum6: "RTL-aware layout and typography.", sum7: "Accessible navigation and dialogs.", sum8: "SEO, Open Graph and JSON-LD included.", sum9: "No framework or build process required.", sum10: "Ready for static hosting and CDN delivery.",
         footerCopy: "Exploring the infinite wonders of space, one discovery at a time.", exploreTitle: "Explore", resourcesTitle: "Resources", legalTitle: "Legal", observatory: "Observatory", missionArchive: "Mission archive", privacy: "Privacy", terms: "Terms", contact: "Contact", madeWith: "Made with curiosity among the stars.",
-        orbitalPeriod: "Orbital period", moonCount: "Known moons", sunDistance: "From the Sun"
+        orbitalPeriod: "Orbital period", moonCount: "Known moons", sunDistance: "From the Sun", contactUs: "Contact Us", phoneLabel: "Phone", telegramLabel: "Telegram ID", nameLabel: "Full name", ownerName: "Sepehr Gomari"
       },
       fa: {
         navHome: "خانه", navPlanets: "منظومه شمسی", navCraft: "فضاپیماها", navAstronauts: "فضانوردان", navMissions: "ماموریت‌ها", navGallery: "گالری",
@@ -2756,7 +2835,7 @@
         sum1: "تجربه سینمایی در یک فایل HTML.", sum2: "رابط موبایل‌فرست و واکنش‌گرا.", sum3: "ستاره‌های Three.js با فال‌بک Canvas2D.", sum4: "چهار تم بصری ماندگار.", sum5: "پشتیبانی از انگلیسی، فارسی و عربی.",
         sum6: "چیدمان RTL و تایپوگرافی مناسب.", sum7: "ناوبری و دیالوگ‌های دسترس‌پذیر.", sum8: "SEO، Open Graph و JSON-LD داخلی.", sum9: "بدون فریم‌ورک و فرایند build.", sum10: "آماده میزبانی استاتیک و CDN.",
         footerCopy: "کاوش شگفتی‌های بی‌پایان فضا، یک کشف در هر لحظه.", exploreTitle: "کاوش", resourcesTitle: "منابع", legalTitle: "حقوقی", observatory: "رصدخانه", missionArchive: "آرشیو ماموریت", privacy: "حریم خصوصی", terms: "شرایط", contact: "تماس", madeWith: "ساخته‌شده با کنجکاوی در میان ستارگان.",
-        orbitalPeriod: "دوره مداری", moonCount: "قمر شناخته‌شده", sunDistance: "فاصله از خورشید"
+        orbitalPeriod: "دوره مداری", moonCount: "قمر شناخته‌شده", sunDistance: "فاصله از خورشید", contactUs: "تماس با ما", phoneLabel: "شماره", telegramLabel: "آیدی تلگرام", nameLabel: "نام و نام خانوادگی", ownerName: "سپهر گماری"
       },
       ar: {
         navHome: "الرئيسية", navPlanets: "النظام الشمسي", navCraft: "المركبات", navAstronauts: "رواد الفضاء", navMissions: "المهمات", navGallery: "المعرض",
@@ -2788,7 +2867,7 @@
         sum1: "تجربة سينمائية في ملف HTML واحد.", sum2: "واجهة متجاوبة تبدأ من الهاتف.", sum3: "نجوم Three.js مع بديل Canvas2D.", sum4: "أربع سمات مرئية محفوظة.", sum5: "دعم الإنجليزية والفارسية والعربية.",
         sum6: "تخطيط RTL وخطوط مناسبة.", sum7: "تنقل ونوافذ حوار متاحة.", sum8: "SEO وOpen Graph وJSON-LD.", sum9: "بلا إطار عمل أو عملية بناء.", sum10: "جاهز للاستضافة الثابتة وCDN.",
         footerCopy: "نستكشف عجائب الفضاء اللانهائية، اكتشافاً بعد آخر.", exploreTitle: "استكشف", resourcesTitle: "المصادر", legalTitle: "قانوني", observatory: "المرصد", missionArchive: "أرشيف المهمات", privacy: "الخصوصية", terms: "الشروط", contact: "اتصل", madeWith: "صُنع بفضول بين النجوم.",
-        orbitalPeriod: "الدورة المدارية", moonCount: "الأقمار المعروفة", sunDistance: "من الشمس"
+        orbitalPeriod: "الدورة المدارية", moonCount: "الأقمار المعروفة", sunDistance: "من الشمس", contactUs: "اتصل بنا", phoneLabel: "الهاتف", telegramLabel: "معرّف تلگرام", nameLabel: "الاسم الكامل", ownerName: "سپهر گماری"
       }
     };
 
